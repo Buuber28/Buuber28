@@ -1,16 +1,32 @@
-## Hi there 👋
+# Hi, I'm Bruno
 
+I'm a Bioinformatics B.Sc. student at TUM and LMU Munich with a strong interest in software development, data analysis, and computational biology.
 
-**Buuber28/Buuber28** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+My main technical strengths are Java, Python, and R. I enjoy building practical tools and pipelines, especially at the intersection of biology, data, and software engineering.
 
-Here are some ideas to get you started:
+## Technical Focus
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+- Software development in Java and Python
+- Data analysis and visualization in R
+- Bioinformatics algorithms and pipelines
+- SQL databases and backend logic
+- Git-based collaborative development
+
+## Selected Projects
+
+### GOR IV Protein Secondary Structure Prediction Pipeline
+Java-based pipeline for protein secondary structure prediction, including training, prediction, cross-validation, SQL database integration, and a web interface.
+
+### Comparative Gene Expression Analysis Across Species
+R-based analysis of multi-species expression data to identify differentially expressed homologous genes involved in heat shock response, including homolog mapping, Gene Ontology analysis, and visualization.
+
+## Tools & Technologies
+
+**Programming:** Java, Python, R, SQL, JavaScript, HTML  
+**Tools:** Git, Linux/Unix command line, MySQL, Microsoft Office Suite  
+**Data & Bioinformatics:** tidyverse, DESeq2, limma, BLAST, Biopython, Cytoscape, Gene Ontology
+
+## Currently Looking For
+
+Working student positions in software engineering, data analysis, or bioinformatics-related roles.
 
