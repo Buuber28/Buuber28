@@ -23,7 +23,7 @@ R-based analysis of multi-species expression data to identify differentially exp
 ## Tools & Technologies
 
 **Programming:** Java, Python, R, SQL, JavaScript, HTML  
-**Tools:** Git, Linux/Unix command line, MySQL, Microsoft Office Suite  
+**Tools:** Git, Unix command line, MySQL, Microsoft Office Suite  
 **Data & Bioinformatics:** tidyverse, DESeq2, limma, BLAST, Biopython, Cytoscape, Gene Ontology
 
 ## Currently Looking For
