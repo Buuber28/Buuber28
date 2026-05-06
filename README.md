@@ -15,7 +15,7 @@ My main technical strengths are Java, Python, and R. I enjoy building practical 
 ## Selected Projects
 
 ### GOR IV Protein Secondary Structure Prediction Pipeline
-Java-based pipeline for protein secondary structure prediction, including training, prediction, cross-validation, SQL database integration, and a web interface.
+Java-based pipeline for protein secondary structure prediction, including training, prediction, cross-validation
 
 ### Comparative Gene Expression Analysis Across Species
 R-based analysis of multi-species expression data to identify differentially expressed homologous genes involved in heat shock response, including homolog mapping, Gene Ontology analysis, and visualization.
