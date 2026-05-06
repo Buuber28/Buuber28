@@ -1,6 +1,6 @@
 # Hi, I'm Bruno
 
-I'm a Bioinformatics B.Sc. student at TUM and LMU Munich with a strong interest in software development, data analysis, and computational biology.
+I'm a Bioinformatics B.Sc. student at TUM and LMU Munich with interest in software development, data analysis, and computational biology.
 
 My main technical strengths are Java, Python, and R. I enjoy building practical tools and pipelines, especially at the intersection of biology, data, and software engineering.
 
