@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="finalStyle.css">
+    <title>Validation GOR</title>
+    <style>
+      #loading-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.65);
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #loading-overlay img {
+        max-width: 220px;
+        width: 30vw;
+        height: auto;
+      }
+
+      #loading-overlay p {
+        margin-top: 12px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+<div id="loading-overlay">
+  <div style="text-align: center;">
+    <img src="loading_cat2.gif" alt="Loading">
+    <p>Cross Validation l&auml;uft...</p>
+  </div>
+</div>
+
+<nav>
+<div class="nav-header">
+<a href="https://bioclient1.bio.ifi.lmu.de/~gogolin/CGI/MainWeb.html"><h1>WebServer5</h1></a>
+</div>
+
+ <div class="nav-group">
+     <h2 class="nav-toggle">Sequenzanalyse</h2>
+    <div class="nav-links">
+        <a href="https://bioclient1.bio.ifi.lmu.de/~gogolin/CGI/swissprot_cgi.py">Swissprot</a>
+        <a href="https://bioclient1.bio.ifi.lmu.de/~gogolin/CGI/homstrad_db_cgi.py">HOMSTRAD</a>
+        <a href="https://bioclient1.bio.ifi.lmu.de/~gogolin/CGI/get_crispr_cgi.py">Crispr</a>
+         </div>
+    </div>
+
+    <div class="nav-group">
+        <h2 class="nav-toggle">Alignment</h2>
+    <div class="nav-links">
+        <a href="https://bioclient1.bio.ifi.lmu.de/~gogolin/CGI/alignment_cgi.py">Alignment</a>
+        <a href="https://bioclient1.bio.ifi.lmu.de/~gogolin/CGI/validation_alignment.html">Validation Alignment</a>
+        </div>
+    </div>
+
+    <div class="nav-group">
+         <h2 class="nav-toggle">GOR</h2>
+    <div class="nav-links">
+        <a href="https://bioclient1.bio.ifi.lmu.de/~kraemerkl/WebServer/OnlyGOR.html">GOR I, III, IV</a>
+        <a href="https://bioclient1.bio.ifi.lmu.de/~kraemerkl/WebServer/GOR5.html">GOR V</a>
+        <a href="https://bioclient1.bio.ifi.lmu.de/~kraemerkl/WebServer/training.html">GOR Training</a>
+        <a href="https://bioclient1.bio.ifi.lmu.de/~kraemerkl/WebServer/combi.html">Training und Predict</a>
+        <a href="https://bioclient1.bio.ifi.lmu.de/~kraemerkl/WebServer/WebServer.html">DNA zu Sekund&auml;rstruktur</a>
+        <a href="https://bioclient1.bio.ifi.lmu.de/~truzzi/validation_gor.html">Validation GOR</a>
+    </div>
+    </div>
+
+
+</nav>
+
+<div class="container">
+  <main>
+    <h2>GOR Validation</h2>
+
+    <section style="margin-top: 40px;">
+      <h3>Datensatz: PC25 Training Set</h3>
+
+      <p>
+        Unser Modell wurde auf einem Protein-Datensatz trainiert,
+        der mit  <strong>PISCES</strong> erstellt wurde. Dabei wurde eine maximale
+        <strong>Sequence Identity von 25&nbsp;%</strong> verwendet, um Redundanz zu vermeiden.
+      </p>
+
+      <div style="margin-top: 20px; overflow-x: auto;">
+        <table style="border-collapse: collapse; width: 100%; max-width: 700px;">
+          <thead>
+            <tr>
+              <th style="text-align: left; padding: 10px; border-bottom: 2px solid #ccc;">Metrik</th>
+              <th style="text-align: left; padding: 10px; border-bottom: 2px solid #ccc;">Wert</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;">Proteine</td><td style="padding: 10px; border-bottom: 1px solid #ddd;">5720</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;">Residuen</td><td style="padding: 10px; border-bottom: 1px solid #ddd;">1324683</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;">Minimale L&auml;nge</td><td style="padding: 10px; border-bottom: 1px solid #ddd;">6</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;">Maximale L&auml;nge</td><td style="padding: 10px; border-bottom: 1px solid #ddd;">1298</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;">Mean Length</td><td style="padding: 10px; border-bottom: 1px solid #ddd;">231.59</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;">Median Length</td><td style="padding: 10px; border-bottom: 1px solid #ddd;">197.00</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;">Helix Residues (H)</td><td style="padding: 10px; border-bottom: 1px solid #ddd;">490566 (37.03%)</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;">Sheet Residues (E)</td><td style="padding: 10px; border-bottom: 1px solid #ddd;">315295 (23.80%)</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;">Coil Residues (C)</td><td style="padding: 10px; border-bottom: 1px solid #ddd;">518822 (39.17%)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section style="margin-top: 40px;">
+      <h3>Benchmark-Vergleich auf CB513</h3>
+
+
+      <div style="margin-top: 20px; overflow-x: auto;">
+        <table style="border-collapse: collapse; width: 100%; max-width: 600px;">
+          <thead>
+            <tr>
+              <th style="text-align: left; padding: 10px; border-bottom: 2px solid #ccc;">Methode</th>
+              <th style="text-align: left; padding: 10px; border-bottom: 2px solid #ccc;">Q3 auf CB513</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd;">Unser GOR IV</td>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd;">63.0 %</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd;">PSIPRED</td>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd;">ca. 79&ndash;81 %</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd;">JPred</td>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd;">80.47 %</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd;">SPIDER3</td>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd;">84.71 %</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd;">NetSurfP-2.0</td>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd;">85.0 %</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+
+    </section>
+
+    <section style="margin-top: 40px;">
+      <h3>1. Q3: Postprocessing vs. No Postprocessing</h3>
+        <p style="margin-top: 15px;">
+        Sehr kurze Helix- oder &beta;-Strang-Segmente werden entfernt (Helix &ge; 3, &beta;-Strang &ge; 2), 
+        und kleine Coil-Unterbrechungen innerhalb l&auml;ngerer Struktursegmente werden angepasst.
+      </p>
+
+      <div class="plot-container" style="text-align: center;">
+        <img src="pc25_cb513_pp_vs_no_pp_q3.png" alt="Q3 Postprocessing vs No Postprocessing" style="width: 100%; max-width: 900px; height: auto;">
+      </div>
+
+  
+    </section>
+
+    <section style="margin-top: 40px;">
+      <h3>2. SOV: Postprocessing vs. No Postprocessing</h3>
+
+      <div class="plot-container" style="text-align: center;">
+        <img src="pc25_cb513_pp_vs_no_pp_sov.png" alt="SOV Postprocessing vs No Postprocessing" style="width: 100%; max-width: 900px; height: auto;">
+      </div>
+
+     
+    </section>
+
+    <section style="margin-top: 50px;">
+      <h3>Cross Validation mit eigenem Datensatz</h3>
+      <p>
+        Hier k&ouml;nnen Sie einen eigenen Datensatz hochladen und darauf direkt eine Cross Validation auf dem Server ausf&uuml;hren.
+        Unterst&uuml;tzt werden seclib sowie PDB-Dateien.
+        
+      </p>
+
+      <form action="validation_gor_cgi.py" method="post" enctype="multipart/form-data" style="margin-top: 20px;" onsubmit="showLoadingOverlay()">
+        <div style="display: flex; flex-direction: column; gap: 15px; max-width: 700px;">
+
+          <label>
+            Validierungsdatensatz oder PDB-Datei:
+            <input type="file" name="db_file" accept=".db,.txt,.psipred,.pdb" required>
+          </label>
+          <p style="margin: 0; font-size: 0.95em;">
+            Erwartetes internes Format: <code>&gt;ID</code>, <code>AS</code>, <code>SS</code>.
+          </p>
+
+          <label>
+            Methode:
+            <select name="method" required>
+              <option value="gor1">GOR I</option>
+              <option value="gor3">GOR III</option>
+              <option value="gor4" selected>GOR IV</option>
+            </select>
+          </label>
+
+          <label>
+            Number of Folds:
+            <input type="number" name="cv" min="2" value="5" required>
+          </label>
+          <input type="hidden" name="seed" value="42">
+          <input type="hidden" name="format" value="txt">
+
+
+          <div>
+            <button type="submit" style="background: #d63384; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+              Cross Validation starten
+            </button>
+          </div>
+        </div>
+      </form>
+  </main>
+</div>
+
+<script>
+function showLoadingOverlay() {
+  var overlay = document.getElementById('loading-overlay');
+  if (overlay) {
+    overlay.style.display = 'flex';
+  }
+}
+</script>
+</body>
+</html>
