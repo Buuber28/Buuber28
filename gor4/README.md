@@ -26,15 +26,6 @@ The program automatically decides whether to run in training or prediction mode 
 
 ---
 
-## Tech Stack
-
-- Java
-- SQL / MySQL
-- HTML
-- Git
-
----
-
 ## Input Formats
 
 ### Training Data (Seclib Format)
