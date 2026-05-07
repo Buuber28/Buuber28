@@ -4,14 +4,6 @@ I'm a Bioinformatics B.Sc. student at TUM and LMU Munich with interest in softwa
 
 My main technical strengths are Java, Python, and R. I enjoy building practical tools and pipelines, especially at the intersection of biology, data, and software engineering.
 
-## Technical Focus
-
-- Software development in Java and Python
-- Data analysis and visualization in R
-- Bioinformatics algorithms and pipelines
-- SQL databases and backend logic
-- Git-based collaborative development
-
 ## Selected Projects
 
 ### GOR IV Protein Secondary Structure Prediction Pipeline
