@@ -18,7 +18,6 @@ R-based analysis of multi-species expression data to identify differentially exp
 **Tools:** Git, Unix command line, MySQL, Microsoft Office Suite  
 **Data & Bioinformatics:** tidyverse, DESeq2, limma, BLAST, Biopython, Cytoscape, Gene Ontology
 
-## Currently Looking For
+## Currently
 
-Working student positions in software engineering, data analysis, or bioinformatics-related roles.
-
+I'm working with healthcare data engineering at Snke Os as a working student!
