@@ -12,4 +12,4 @@ My main technical strengths are Java, Python, and R. I enjoy building practical 
 
 ## Currently
 
-I'm working with healthcare data engineering at Snke Os as a working student!
+I'm working with healthcare data engineering at [Snke Os](https://github.com/snkeos) as a working student!
